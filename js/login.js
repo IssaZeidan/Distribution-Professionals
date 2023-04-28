@@ -12,7 +12,7 @@ login1.addEventListener("submit", (event) => {
 
     
     if (Email == arr.email && Password == arr.password) {
-        window.location.href = "../HTML/companyPage.html";
+        window.location.href = "../html/companyPage.html";
         window.sessionStorage.setItem("info", JSON.stringify(arr))
 
     }

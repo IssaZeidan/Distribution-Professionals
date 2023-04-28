@@ -34,8 +34,8 @@ form.addEventListener("submit", (event) => {
   sessionStorage.setItem("info", JSON.stringify(formData));
 
   if (position.value === "Market") {
-    window.location.pathname = "/HTML/marketPage.html";
-  } else window.location.pathname = "/HTML/companyPage.html";
+    window.location.pathname = "/html/marketPage.html";
+  } else window.location.pathname = "/html/companyPage.html";
 
   // Reset form
   form.reset();
