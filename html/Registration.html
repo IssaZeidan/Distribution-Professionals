@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Register.css" />
+  </head>
+  <body>
+            <!-- Navbar section -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-top"
+      style="background-color: #cbe4de"
+    >
+      <div class="container">
+        <img
+          src="../img/distribution-professionals-logo.png"
+          style="width: 10%; margin-right: 30px"
+          alt="Logo"
+        />
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="../index.html"
+                >Our Vision</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="./companies.html"
+                >Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="./userAbout.html"
+                >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="#contact"
+                >Contact</a>
+            </li>
+          </ul>
+          <a target="_blank" href="./checkOut.html"> <img style="width:40px;  " src="../Img/Cart.jpg" alt="cart">
+          </a>
+          <p style="text-align: center; margin-right: 20px; background-color: white; margin-bottom: 20px;  border-radius: 80%; padding: 3px;" id="cartCount"></p>
+        </div>
+      </div>
+    </nav>
+        <!-- links -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+      />
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+      <!-- links -->
+      <title>Registration page</title>
+    </head>
+  
+    <body>
+    <!-- Start: Registration Form with Photo -->
+    <section class="register-photo">
+      <!-- Start: Form Container -->
+      <div class="form-container">
+        <!-- Start: Image -->
+        <div class="image-holder"></div>
+        <!-- End: Image -->
+        <form  id="regForm" style="border-radius: 5%">
+          <img src="../img/distribution-professionals-logo.png" class="w-50" />
+          <h2 class="text-center"><img class="align-items-start" alt="" /></h2>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              name="name"
+              placeholder="Username"
+            />
+            <p id="username-error"></p>
+          </div>
+
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="text"
+              name="email"
+              placeholder="Email"
+            />
+            <p id="email-error"></p>
+          </div>
+          <div class="mb-3">
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <p id="pass-error"></p>
+          </div>
+          <!-- <div class="mb-3"><input class="form-control" type="password" name="password-repeat"
+                        placeholder="Confirm Password"></div> -->
+          <!-- Start: Dropdown -->
+          <div class="dropdown">
+            <select id="spain" class="btn-primary1 w-100">
+              <option value="">Select</option>
+              <option value="Company">Company</option>
+              <option value="Market">Market</option>
+            </select>
+          </div>
+
+          <!-- End: Dropdown -->
+
+          <div class="mb-3"></div>
+          <div class="form-check">
+            <label class="form-check-label"
+              ><input class="form-check-input" type="checkbox" />I agree to the
+              license terms.</label
+            >
+            <p id="check-error"></p>
+          </div>
+          <div class="test mb-3">
+            <input
+              class="btn btn-primarysignup "
+              type="submit"
+              value="Sign Up"
+            />
+
+            <p class="test" style="color: #646d75;">
+              Already have an account?
+              <a class="test" href="./login.html" style="color: #00404e">Login here.</a>
+            </p>
+
+          <br />
+          <br />
+        </form>
+      </div>
+      <!-- End: Form Container -->
+    </section>
+    <!-- End: Registration Form with Photo -->
+  
+          <!-- Footer -->
+  <footer
+  class="text-center text-lg-start text-dark"
+  style="background-color: #ECEFF1"
+  >
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold"></h6> <img src="../Img/distribution-professionals-logo.png" style="width: 50%; margin-right: 30px; margin-top: 20%; margin-left: 20%;" alt="logo"> 
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Services</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="./marketCompaniesPage.html" class="text-dark">Partners</a>
+    </p>
+    <p>
+      <a href="./marketOffersPage.html" class="text-dark">Offers</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Useful links</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="./userAbout.html" class="text-dark">About</a>
+    </p>
+    <p>
+      <a href="./Registration.html" class="text-dark">Become an Affiliate</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Contact</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p><i class="fas fa-home mr-3"></i> Jordan</p>
+    <p><i class="fas fa-envelope mr-3">
+      <a 
+      href="mailto:issa.zeidan94@gmail.com">
+    </i> info@dfc.com</p>
+  </a>
+    <p><i class="fas fa-phone mr-3">
+      <a href="tel:+962777627435">
+    </i> + 962 77 7627 345</p>
+  </a>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: rgba(0, 0, 0, 0.2)"
+ >
+© 2023 Copyright
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/registration.js" defer></script>
+  </body>
+</html>

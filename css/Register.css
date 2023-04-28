@@ -1,0 +1,122 @@
+
+.register-photo {
+    background: #e7faf5;
+    padding: 10%
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    border-radius: 7%;
+    width: 50%;
+    background: url(../img/Distribution.jpg) 0 0/cover
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #fff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 5px
+}
+
+.register-photo form .form-control {
+    border: 1px solid #00404e;
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    text-indent: 6px;
+    height: 50px
+}
+
+.btn-primary1 {
+    border: 1px solid #00404e;
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    text-indent: 6px;
+    height: 50px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+}
+
+
+.register-photo form .btn-primarysignup {
+    color: #fff;
+    background: #00404e;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: 0 !important
+}
+
+
+
+.register-photo form .btn-primarysignup:active,
+.register-photo form .btn-primarysignup:hover {
+    background: #077993
+}
+
+
+
+.register-photo form .btn-primarysignup:active {
+    transform: translateY(1px)
+}
+
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    opacity: .9;
+    text-decoration: none
+}
+.input-error{
+    border: 1px solid red !important;
+    color: red;
+}
+#username-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#email-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#pass-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}
+#check-error{
+    color: red;
+    font-size: 10px;
+    padding: 5px 10px;
+}

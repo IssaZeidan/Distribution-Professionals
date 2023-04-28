@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+            <!-- Navbar section -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light sticky-top"
+      style="background-color: #cbe4de"
+    >
+      <div class="container">
+        <img
+          src="../img/distribution-professionals-logo.png"
+          style="width: 10%; margin-right: 30px"
+          alt="Logo"
+        />
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="../index.html"
+                >Our Vision</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="./companies.html"
+                >Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="./userAbout.html"
+                >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #00404e" href="#contact"
+                >Contact</a>
+            </li>
+          </ul>
+          <a target="_blank" href="./userCheckOut.html"> <img style="width:40px;  " src="../img/Cart.jpg" alt="cart">
+          </a>
+          <p style="text-align: center; margin-right: 20px; background-color: white; margin-bottom: 20px;  border-radius: 80%; padding: 3px;" id="cartCount"></p>
+        </div>
+      </div>
+    </nav>
+        <!-- links -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+      />
+      <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+      <!-- links -->
+      <title>login page</title>
+    </head>
+  
+    <body>
+      <!-- login -->
+      <section class="vh-100" style="background-color: #e7faf5">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-8">
+              <div class="card" style="border-radius: 1rem">
+                <div class="row g-0">
+                  <div
+                    class="col-md-6 col-lg-5 d-none d-md-block"
+                    style="background-color: #e7f4fa"
+                  >
+                    <img
+                      src="../img/Distribution.jpg"
+                      alt="login form"
+                      class="img-fluid"
+                      style="border-radius: 1rem 0 0 1rem; height: 100%; width: 100%;"
+                    />
+                  </div>
+                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                    <div class="card-body p-4 p-lg-5 text-black">
+                      <form id="login1" action="./test.html">
+                        <div class="d-flex align-items-center mb-4 pb-1">
+                          <img
+                            src="../img/distribution-professionals-logo.png"
+                            alt="img"
+                            style="width: 140px; height: 40px"
+                          />
+                        </div>
+  
+                        <h5
+                          class="fw-normal mb-3 pb-3"
+                          style="letter-spacing: 1px"
+                        >
+                          Sign into your account
+                        </h5>
+  
+                        <div class="form-outline mb-4" id="email">
+                          <label
+                            class="form-label"
+                            for="form2Example17"
+                            id="email"
+                            style="color: #00404e"
+                            >Emailaddress</label
+                          >
+                          <input
+                            name="email"
+                            type="text"
+                            id="form2Example17 "
+                            class="form-control form-control-lg"
+                            style="border: 1px solid #00404e"
+                          />
+                          <p id="email-error"></p>
+                        </div>
+                        <label
+                          class="form-label"
+                          for="form2Example27"
+                          style="color: #00404e"
+                          >Password</label
+                        >
+                        <div class="form-outline mb-1">
+                          <input
+                            type="password"
+                            id="form2Example27"
+                            name="password"
+                            class="form-control form-control-lg"
+                            style="border: 1px solid #00404e"
+                          />
+                        </div>
+  
+                        <a class="small text-muted" href="#!">Forgot password?</a>
+                        <div class="pt-1 mt-4">
+                          <input
+                            type="submit"
+                            class="btn btn-lg btn-block text-light"
+                            style="color: white; background-color: #00404e"
+                            id="login"
+                            value="Login"
+                          />
+                        </div>
+                        <p class="mt-4 pb-lg-2" style="color: black">
+                          Don't have an account?
+                          <a href="./Registration.html" style="color: #00404e"
+                            >Register here</a
+                          >
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- Footer -->
+  <footer
+  class="text-center text-lg-start text-dark"
+  style="background-color: #ECEFF1"
+  >
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+    <!-- Content -->
+    <h6 class="text-uppercase fw-bold"></h6> <img src="../img/distribution-professionals-logo.png" style="width: 50%; margin-right: 30px; margin-top: 20%; margin-left: 20%;" alt="logo"> 
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Services</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="./marketCompaniesPage.html" class="text-dark">Partners</a>
+    </p>
+    <p>
+      <a href="./marketOffersPage.html" class="text-dark">Offers</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Useful links</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p>
+      <a href="./userAbout.html" class="text-dark">About</a>
+    </p>
+    <p>
+      <a href="./Registration.html" class="text-dark">Become an Affiliate</a>
+    </p>
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold">Contact</h6>
+    <hr
+        class="mb-4 mt-0 d-inline-block mx-auto"
+        style="width: 60px; background-color: #7c4dff; height: 2px"
+        />
+    <p><i class="fas fa-home mr-3"></i> Jordan</p>
+    <p><i class="fas fa-envelope mr-3">
+      <a 
+      href="mailto:issa.zeidan94@gmail.com">
+    </i> info@dfc.com</p>
+  </a>
+    <p><i class="fas fa-phone mr-3">
+      <a href="tel:+962777627435">
+    </i> + 962 77 7627 345</p>
+  </a>
+  </div>
+  <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+ class="text-center p-3"
+ style="background-color: rgba(0, 0, 0, 0.2)"
+ >
+© 2023 Copyright
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  
+      <!-- script -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script> -->
+      <script
+        src="https://kit.fontawesome.com/d3ff0f0348.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="../js/login.js"></script>
+      <!-- script -->
+</body>
+</html>
