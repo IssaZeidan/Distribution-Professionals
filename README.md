@@ -10,4 +10,4 @@ This website is created to connect the companies with the distributors in possib
 + CSS
 + JavaScript
 
->* In order to check the first step on the website idea kindly visit [This link](https://www.figma.com/file/OnCyWvwZmn64pANll9scVu/Masterpiece?node-id=0-1&t=dq8xrxFRHhTegue7-0)
+>* In order to check the first step on the website idea kindly visit [This link](https://www.figma.com/file/OnCyWvwZmn64pANll9scVu/Masterpiece?node-id=0-1&t=dq8xrxFRHhTegue7-0) and this is the [live demo](https://issazeidan.github.io/Distribution-Professionals/)
