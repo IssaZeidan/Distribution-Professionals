@@ -61,7 +61,7 @@
                 >About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: #00404e" href="#contact"
+              <a class="nav-link" style="color: #00404e" href="#Contact"
                 >Contact</a>
             </li>
           </ul>
@@ -89,8 +89,8 @@
     
 <section class="header">
     <header>
-        <div class="d-flex min-vh-100" lc-helper="background" style="background:url('./img/Distribution.jpg') center / cover no-repeat; background-color:#201f1fc6; background-blend-mode: overlay;">
-            <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+      <div class="d-flex" lc-helper="background" style="background:url('../img/Distribution.jpg') center / cover no-repeat; background-color:#201f1fc6; background-blend-mode: overlay; height: 500px;">
+        <div class="align-self-center text-center text-light col-md-8 offset-md-2">
               <div class="lc-block mb-4">
                 <div editable="rich">
                           <div  id="intro" class="display-1 fw-bolder" style="margin-bottom: 74px";
@@ -106,8 +106,11 @@
           </div>
      <br>
      <br>
+     <br>
+     <br>
+     <br>
     </header>
-
+</section>
 
 
                                              <!-- Products section -->
@@ -154,90 +157,79 @@
 
  <section>
   <form id="myForm">
-      <div class="pt-lg-5 card-group d-lg-grid gap-3 justify-content-center mx-auto w-50" id="Products"  style=" text-align: center; width: 90%; align-items: center;">
+      <div class="pt-lg-5 card-group d-lg-grid gap-3 justify-content-center mx-auto w-50" id="Offers"  style=" text-align: center; width: 90%; align-items: center;">
           <h2 style="text-align: center;">Offers</h2>
-              <div class="cart-row">
-                  <div class="lakn">
-                      <img id="shop-item-cart-1" style="width: 200px;" src="./img/Chicken burger.png" alt="Chicken Burger">
+
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                      <img class="item" id="shop-item-cart-1" src="./img/Chicken burger.png" alt="Chicken Burger">
                       <span id="shop-title-1">Chicken Burger</span>
                       <span id="shop-price-1">3.00 JD</span>
-                      <input id="shop-quantity-1" type="number" value="1">
+                      <input style="text-align: center;" id="shop-quantity-1" type="number" value="1">
                       <button onclick="add(1)" id="add-to-cart">Add to cart</button>
+                </div>
+              </div>  
+
+
+              <div class="col">
+                <div class="card">
+                  <img id="shop-item-cart-2" src="./img/Lasagna.jpg" alt="Lasagna">
+                              <span id="shop-title-2">Lasagna</span>
+                              <span id="shop-price-2">2.00 JD</span>
+                              <input style="text-align: center;" id="shop-quantity-2" type="number" value="1" />
+                              <button onclick="add(2)" id="add-to-cart">Add to cart</button>
                   </div>
-              </div>
-              <div class="cart-row">
-                  <div class="lakn">
-                      <img id="shop-item-cart-2" src="./img/Lasagna.jpg" alt="Lasagna">
-                      <span id="shop-title-2">Lasagna</span>
-                      <span id="shop-price-2">2.00 JD</span>
-                      <input id="shop-quantity-2" type="number" value="1" />
-                      <button onclick="add(2)" id="add-to-cart">Add to cart</button>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img id="shop-item-cart-3"  src="./img/Beef burger.png" alt="Beef Burger">
+                              <span id="shop-title-3">Beef Burger</span>
+                              <span id="shop-price-3">4.00 JD</span>
+                              <input style="text-align: center;" id="shop-quantity-3" type="number" value="1" />
+                              <button onclick="add(3)" id="add-to-cart">Add to cart</button>
+                    </div>
                   </div>
-              </div>
-              <div class="cart-row">
-                  <div class="lakn">
-                      <img id="shop-item-cart-3" style="width: 200px;" src="./img/Arabic beef burger.png" alt="Beef Burger">
-                      <span id="shop-title-3">Beef Burger</span>
-                      <span id="shop-price-3">4.00 JD</span>
-                      <input id="shop-quantity-3" type="number" value="1" />
-                      <button onclick="add(3)" id="add-to-cart">Add to cart</button>
-                  </div>
-              </div>
-              <div class="cart-row">
-                  <div class="lakn">
+                  <div class="col">
+                    <div class="card">
                       <img id="shop-item-cart-4" src="./img/Beef-Kabab.jpg" alt="Beef Kabab">
                       <span id="shop-title-4">Beef Kabab</span>
                       <span id="shop-price-4">3.00 JD</span>
-                      <input id="shop-quantity-4" type="number" value="1" />
+                      <input style="text-align: center;" id="shop-quantity-4" type="number" value="1" />
                       <button onclick="add(4)" id="add-to-cart">Add to cart</button>
-                  </div>
-              </div>
-              <a style="padding-left: 50%;" href="./html/Offer page.html">see more</a>
-          </div>
-          
+                      </div>
+                    </div>
+             
+          </div>  
+          <a style="text-align: center;" href="./html/Offer page.html">see more</a>
   </form>
     </section>
 
 
-
-  <!-- Footer -->
-  <footer
+  <!-- <footer
           class="text-center text-lg-start text-dark"
-          style="background-color: #ECEFF1"
+          style="background-color: #ECEFF1;"
           >
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
+    <section id="Contact">
+      <div class="container text-center text-md-start mt-4">
         <div class="row mt-3">
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
             <h6 class="text-uppercase fw-bold"></h6> <img src="./img/distribution-professionals-logo.png" style="width: 50%; margin-right: 30px; margin-top: 20%; margin-left: 20%;" alt="logo"> 
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Services</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
                 style="width: 60px; background-color: #7c4dff; height: 2px"
                 />
             <p>
-              <a href="./html/marketCompaniesPage.html" class="text-dark">Partners</a>
+              <a href="./html/companies.html" class="text-dark">Partners</a>
             </p>
             <p>
-              <a href="./html/marketOffersPage.html" class="text-dark">Offers</a>
+              <a href="./html/Offer page.html" class="text-dark">Offers</a>
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Useful links</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
@@ -250,11 +242,7 @@
               <a href="./html/Registration.html" class="text-dark">Become an Affiliate</a>
             </p>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
             <h6 class="text-uppercase fw-bold">Contact</h6>
             <hr
                 class="mb-4 mt-0 d-inline-block mx-auto"
@@ -271,23 +259,16 @@
           </a>
             <p><i class="fas fa-print mr-3"></i> + 962 12 345 678</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
-    </section>
-    <!-- Section: Links  -->
-
-    <!-- Copyright -->
+    </section> -->
     <div
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
       © 2023 Copyright
     </div>
-    <!-- Copyright -->
   </footer>
-  <!-- Footer -->
 
 
       <script
