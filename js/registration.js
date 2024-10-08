@@ -14,60 +14,54 @@ const emailError = document.getElementById("email-error");
 const passError = document.getElementById("pass-error");
 const checkError = document.getElementById("check-error");
 const inputError = document.querySelector(".input-error");
-// Set a flag to keep track of whether an option has been selected from the dropdown menu
-//let dropdownSelected = false;
-console.log("before form");
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   // Validate form fields
   if (!isFormValid()) {
     return;
   }
+  // Encrypt the password before saving
+  const encryptedPassword = CryptoJS.AES.encrypt(passwordInput.value, 'secret-key').toString();
+
   // Save form data to local storage
   const formData = {
     username: usernameInput.value,
-    password: passwordInput.value,
+    password: encryptedPassword,
     email: emailInput.value,
     position: position.value,
   };
-  localStorage.setItem("formData", JSON.stringify(formData));
+  let users = JSON.parse(localStorage.getItem("formData")) || [];
+  if (!Array.isArray(users)) {
+    users = [];
+  }
+  users.push(formData);
+  localStorage.setItem("formData", JSON.stringify(users));
   sessionStorage.setItem("info", JSON.stringify(formData));
 
   if (position.value === "Market") {
-    window.location.pathname = "../html/marketPage.html";
-  } else window.location.pathname = "../html/companyPage.html";
+    window.location.href = "../html/marketPage.html";
+  } else {
+    window.location.href = "../html/companyPage.html";
+  }
 
   // Reset form
   form.reset();
 });
-console.log("after form");
 
 function isFormValid() {
   if (!usernameInput.value.trim()) {
-    usernameInput.classList.toggle("input-error");
+    usernameInput.classList.add("input-error");
     userNameError.textContent = "Please enter your username.";
-    // alert("Please enter your username.");
     return false;
   } else {
     usernameInput.classList.remove("input-error");
     userNameError.textContent = "";
   }
 
-  // if (!usernameRegex.test(usernameInput.value)) {
-  //   usernameInput.classList.toggle("input-error");
-  //   userNameError.textContent = "Username should not contain spaces.";
-  //   // alert("Username should not contain spaces.");
-  //   return false;
-  // } else {
-  //   usernameInput.classList.remove("input-error");
-  //   userNameError.textContent = "";
-  // }
-
   if (!passwordInput.value.trim()) {
-    passwordInput.classList.toggle("input-error");
-
+    passwordInput.classList.add("input-error");
     passError.textContent = "Please enter your password.";
-    // alert("Please enter your password.");
     return false;
   } else {
     passwordInput.classList.remove("input-error");
@@ -75,11 +69,8 @@ function isFormValid() {
   }
 
   if (!passwordRegex.test(passwordInput.value)) {
-    passwordInput.classList.toggle("input-error");
-
-    passError.textContent =
-      "Password should have at least 8 characters with at least 1 number, uppercase, and special characters.";
-    // alert("Password should have at least 8 characters with at least 1 number, uppercase, and special characters.");
+    passwordInput.classList.add("input-error");
+    passError.textContent = "Password should have at least 8 characters with at least 1 number, uppercase, and special characters.";
     return false;
   } else {
     passwordInput.classList.remove("input-error");
@@ -87,10 +78,8 @@ function isFormValid() {
   }
 
   if (!emailInput.value.trim()) {
-    emailInput.classList.toggle("input-error");
-
+    emailInput.classList.add("input-error");
     emailError.textContent = "Please enter your email address.";
-    // alert("Please enter your email address.");
     return false;
   } else {
     emailInput.classList.remove("input-error");
@@ -98,10 +87,8 @@ function isFormValid() {
   }
 
   if (!emailRegex.test(emailInput.value)) {
-    emailInput.classList.toggle("input-error");
-
+    emailInput.classList.add("input-error");
     emailError.textContent = "Please enter a valid email address.";
-    // alert("Please enter a valid email address.");
     return false;
   } else {
     emailInput.classList.remove("input-error");
@@ -109,10 +96,8 @@ function isFormValid() {
   }
 
   if (!checkbox.checked) {
-    checkbox.classList.toggle("input-error");
-
+    checkbox.classList.add("input-error");
     checkError.textContent = "Please agree to the license terms.";
-    // alert("Please agree to the license terms.");
     return false;
   } else {
     checkbox.classList.remove("input-error");
